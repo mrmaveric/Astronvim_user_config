@@ -21,7 +21,7 @@ return {
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
   },
   t = {
-    ["ppp"] = { "<C-\\><C-n>", desc = "leave insert mode in terminal" },
+    ["<C-i>"] = { "<C-\\><C-n>", desc = "leave insert mode in terminal" },
     -- setting a mapping to false will disable it
     -- ["<esc>"] = false,
   },

@@ -6,11 +6,12 @@ return {
         number = true, -- sets vim.opt.number
         spell = false, -- sets vim.opt.spell
         signcolumn = "auto", -- sets vim.opt.signcolumn to auto
-        wrap = false,  -- sets vim.opt.wrap
+        wrap = true,  -- sets vim.opt.wrap
         tabstop = 4,   -- These tab options seem to be overwritten by something
         softtabstop = 4, -- These tab options seem to be overwritten by something
         shiftwidth = 4, -- These tab options seem to be overwritten by something
         expandtab = true, -- These tab options seem to be overwritten by something
+        spelllang = "en_au",
     },
     g = {
         mapleader = " ",           -- sets vim.g.mapleader
@@ -22,6 +23,7 @@ return {
         icons_enabled = true,     -- disable icons in the UI (disable if no nerd font is available, requires :PackerSync after changing)
         ui_notifications_enabled = true, -- disable notifications when toggling UI elements
         heirline_bufferline = true, -- enable new heirline based bufferline (requires :PackerSync after changing)
+        noexpandtab = true,
     },
 }
 -- If you need more control, you can use the function()...end notation

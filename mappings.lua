@@ -10,8 +10,8 @@ return {
     -- Keep cursor in center
     --["j"] = { "jzz", desc = "Move down" },
     --["k"] = { "kzz", desc = "Move up" },
-    ["L"] = { "<cmd>bnext<cr>", desc = "Next Buffer" },
-    ["H"] = { "<cmd>bprevious<cr>", desc = "Previous Buffer" },
+    ["L"] = { function() require("astronvim.utils.buffer").nav(vim.v.count > 0 and vim.v.count or 1) end, desc = "Next buffer" },
+    ["H"] = { function() require("astronvim.utils.buffer").nav(-(vim.v.count > 0 and vim.v.count or 1)) end, desc = "Previous buffer" },
     ["<C-d>"] = { "<C-d>zz", desc = "Move window down" },
     ["<C-u>"] = { "<C-u>zz", desc = "Move window up" },
     -- tables with the `name` key will be registered with which-key if it's installed
